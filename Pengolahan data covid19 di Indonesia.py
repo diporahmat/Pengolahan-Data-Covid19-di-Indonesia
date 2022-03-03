@@ -13,10 +13,6 @@ print(data.describe())
 
 print(data.dtypes)
 
-'''pada kolom ini kita akan melakukan transformasi dan menambahkan kolom baru pada dataframe kita. 
-Kita beri nama kolom baru dengan data hasil normalisasi tersebut sebagai cases_norm.
-Pada bagian ini saya akan menggunakan metode logaritmik, dipersilahkan jika peserta ingin menggunakan metode yang lain
-'''
 data['cases_norm'] = np.log(data[['Kasus_harian']])
 print(data)
 
